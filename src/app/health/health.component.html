@@ -1,0 +1,14 @@
+<div class="i">
+<div class="container text-center mt-5 p-4 ">
+  <div *ngIf="healthTips">
+    <h2 class="mb-4 fs-1">Healthcare Policy and Regulations</h2>
+    <div class="container">
+      <div class="box-content">
+        <div *ngFor="let tip of healthTips" class="tip">
+          <p>{{ tip.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

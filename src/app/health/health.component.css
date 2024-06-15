@@ -1,0 +1,14 @@
+.box-content {
+    border-radius: 30px;
+    background-color: rgba(153, 149, 149, 0.4);
+    width: 700px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .tip {
+    margin-bottom: 10px;
+  }
+.container{
+    margin-left: 200px;
+}  

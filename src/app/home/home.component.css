@@ -1,0 +1,43 @@
+.container-fluid {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/home.jpg);
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+}
+
+.header-1 {
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.btn {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+}

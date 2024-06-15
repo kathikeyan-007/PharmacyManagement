@@ -1,0 +1,52 @@
+
+    <div class="container px-5 my-5 pb-5">
+        <br><br>
+        <h1 class="mb-4 ">Medicine Information</h1>
+        <form class="was-validated">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="name" placeholder="Enter medicine name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter medicine name.</div>
+            </div>
+            
+            <!-- End of new div -->
+            <div class="mb-3">
+                <label for="dosageStrength" class="form-label">Dosage Strength</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="dosageStrength" placeholder="Enter dosage strength" [(ngModel)]="dosageStrength" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter dosage strength.</div>
+            </div>
+            <div class="mb-3">
+                <label for="dosageForm" class="form-label">Dosage Form</label>
+                <select class="form-select form-select-lg is-invalid" id="dosageForm" required [(ngModel)]="dosageForm" [ngModelOptions]="{standalone: true}" required>
+                    <option selected disabled>Select dosage form</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="capsule">Capsule</option>
+                    <option value="liquid">Liquid</option>
+                </select>
+                <div class="invalid-feedback">Please select a dosage form.</div>
+            </div>
+            <div class="mb-3">
+                <label for="routeOfAdministration" class="form-label">Route of Administration</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="routeOfAdministration" placeholder="Enter route of administration" [(ngModel)]="routeOfAdministration" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter route of administration.</div>
+            </div>
+            <div class="mb-3">
+                <label for="frequency" class="form-label">Frequency</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="frequency" placeholder="Enter frequency" [(ngModel)]="frequency" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter frequency.</div>
+            </div>
+            <div class="mb-3">
+                <label for="duration" class="form-label">Duration</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="duration" placeholder="Enter duration" [(ngModel)]="duration" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter duration.</div>
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="text" class="form-control form-control-lg is-invalid" id="quantity" placeholder="Enter quantity" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" required>
+                <div class="invalid-feedback">Please enter quantity.</div>
+            </div>
+            
+            <button type="button" class="btn btn-primary" (click)="saveMedicine()">Save</button>
+        </form>
+    </div>
+

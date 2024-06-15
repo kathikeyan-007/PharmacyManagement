@@ -1,0 +1,43 @@
+<style>
+    .rounded-table {
+      border-radius: 10px; 
+      overflow: hidden; 
+    }
+  </style>
+
+ 
+  
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <h1 style="color: rgb(0, 78, 78); font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 350px;">Proceed to Pay</h1>
+        <div class="table-responsive rounded-table" style="width: 250px; margin-left: 310px;">
+            
+          <table class="table table-striped table-dark table-bordered p-3">
+            <thead>
+              <tr>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let medicine of medicines; let i = index">
+                <td>{{ medicine.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="wrapper mt-1 row justify-content-center">
+    <google-pay-button
+      environment="TEST"
+      buttonColor="white"
+      buttonType="buy"
+      [paymentRequest]="paymentRequest"
+      [style.width.px]="buttonWidth"
+      (loadpaymentdata)="onLoadPaymentData($event)">
+    </google-pay-button>
+  </div>
+  
